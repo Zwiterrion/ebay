@@ -428,6 +428,11 @@ declare class Finding extends BaseClient {
 
 }
 
+declare class Analytics extends BaseClient {
+
+    getTrafficReport(params: any): Promise<any>;
+}
+
 declare class Shopping extends BaseClient {
 
     getCategoryInfo(params: any): Promise<any>;
@@ -473,6 +478,8 @@ declare class eBayNodeClient {
     finding: Finding;
 
     shopping: Shopping;
+
+    analytics: Analytics;
 
     constructor()
 
